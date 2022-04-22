@@ -25,6 +25,6 @@ def create_app(test_config=None):
 
     from static.todoApp import todo_list
 
-    app.register_blueprint(todo_list, url_prefix='/api/v1')
+    app.register_blueprint(todo_list, url_prefix='')
 
     return app
